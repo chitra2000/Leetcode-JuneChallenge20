@@ -1,0 +1,19 @@
+class Solution 
+{
+    public boolean isSubsequence(String s, String t)
+    {
+    
+  	   int i=0;
+       for(int x=0;x<t.length();x++)
+       {
+    	  if(i==s.length())
+            break;
+    	  if(t.charAt(x)==s.charAt(i))
+            i++;
+        }
+        if(i==s.length())
+          return true;
+        else
+          return false;
+    }
+}
